@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayesh | Digital Hub</title>
+    
+    <meta property="og:title" content="Jayesh | Digital Hub">
+    <meta property="og:description" content="Explore my professional profiles, projects, and social connectivity in one place. 🔥">
+    <meta property="og:image" content="https://img.freepik.com/premium-photo/letter-j-neon-light-techno-futuristic-abstract-background-generative-ai_1022112-2586.jpg">
+    <meta property="og:url" content="https://jayeshdhumal355.github.io/digital-hub/">
+
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -18,20 +24,22 @@
             justify-content: center;
             color: white;
             font-family: 'Poppins', sans-serif;
-            overflow: hidden;
+            padding: 40px 0;
+            overflow-x: hidden;
         }
 
+        /* --- Header Section --- */
         .brand-header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             padding: 10px;
         }
 
         .main-title {
             font-family: 'Orbitron', sans-serif;
-            font-size: 30px; 
+            font-size: 32px; 
             font-weight: 900;
-            letter-spacing: 4px;
+            letter-spacing: 5px;
             text-transform: uppercase;
             color: #fff;
             text-shadow: 0 0 10px #fff, 0 0 20px #00f2fe, 0 0 30px #00f2fe;
@@ -53,9 +61,10 @@
             20%, 24%, 55% { text-shadow: none; }
         }
 
+        /* --- Links Container --- */
         .links-container {
             width: 100%;
-            max-width: 380px;
+            max-width: 400px;
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -65,8 +74,8 @@
         .link-card {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 14px;
-            border-radius: 10px;
+            padding: 15px;
+            border-radius: 12px;
             text-align: center;
             text-decoration: none;
             color: white;
@@ -77,48 +86,39 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
         }
 
-        /* --- Individual Hover Effects --- */
-        .insta { border-left: 4px solid #bc1888; }
-        .insta:hover { 
-            background: rgba(188, 24, 136, 0.15); 
-            box-shadow: 0 0 20px rgba(188, 24, 136, 0.6); 
-            border-color: #e1306c;
-            transform: translateY(-3px); 
-        }
+        /* --- Individual Button Glow Effects --- */
+        .linkedin { border-left: 5px solid #0077b5; }
+        .linkedin:hover { background: rgba(0, 119, 181, 0.15); box-shadow: 0 0 20px rgba(0, 119, 181, 0.6); transform: translateY(-3px); }
 
-        .youtube { border-left: 4px solid #ff0000; }
-        .youtube:hover { 
-            background: rgba(255, 0, 0, 0.15); 
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); 
-            border-color: #ff0000; 
-            transform: translateY(-3px); 
-        }
+        .github { border-left: 5px solid #ffffff; }
+        .github:hover { background: rgba(255, 255, 255, 0.1); box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); transform: translateY(-3px); }
 
-        .whatsapp { border-left: 4px solid #25d366; }
-        .whatsapp:hover { 
-            background: rgba(37, 211, 102, 0.15); 
-            box-shadow: 0 0 20px rgba(37, 211, 102, 0.6); 
-            border-color: #25d366; 
-            transform: translateY(-3px); 
-        }
+        .insta { border-left: 5px solid #bc1888; }
+        .insta:hover { background: rgba(188, 24, 136, 0.15); box-shadow: 0 0 20px rgba(188, 24, 136, 0.6); transform: translateY(-3px); }
 
-        .projects { border-left: 4px solid #7000ff; }
-        .projects:hover { 
-            background: rgba(112, 0, 255, 0.15); 
-            box-shadow: 0 0 20px rgba(112, 0, 255, 0.6); 
-            border-color: #7000ff; 
-            transform: translateY(-3px); 
-        }
+        .youtube { border-left: 5px solid #ff0000; }
+        .youtube:hover { background: rgba(255, 0, 0, 0.15); box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); transform: translateY(-3px); }
 
-        .footer-tag {
-            margin-top: 30px;
-            font-size: 8px;
-            letter-spacing: 2px;
+        .whatsapp { border-left: 5px solid #25d366; }
+        .whatsapp:hover { background: rgba(37, 211, 102, 0.15); box-shadow: 0 0 20px rgba(37, 211, 102, 0.6); transform: translateY(-3px); }
+
+        .projects { border-left: 5px solid #7000ff; }
+        .projects:hover { background: rgba(112, 0, 255, 0.15); box-shadow: 0 0 20px rgba(112, 0, 255, 0.6); transform: translateY(-3px); }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 9px;
             color: #475569;
+            letter-spacing: 2px;
             text-transform: uppercase;
+        }
+
+        @media (max-width: 480px) {
+            .main-title { font-size: 26px; }
+            .sub-title { font-size: 10px; letter-spacing: 6px; }
         }
     </style>
 </head>
@@ -130,25 +130,33 @@
     </div>
 
     <div class="links-container">
+        <a href="https://www.linkedin.com/in/jayesh-dhumal-47b92b3a1/" target="_blank" class="link-card linkedin">
+            🔗 Professional LinkedIn
+        </a>
+
+        <a href="https://github.com/jayeshdhumal355" target="_blank" class="link-card github">
+            💻 GitHub Repositories
+        </a>
+
         <a href="https://www.instagram.com/crown_jd_10" target="_blank" class="link-card insta">
-            📸 Follow on Instagram
+            📸 Instagram Feed
         </a>
 
         <a href="https://www.youtube.com/@trolltrapped" target="_blank" class="link-card youtube">
-            🎬 YouTube: Troll Trapped
+            🎬 YouTube Channel
         </a>
 
-        <a href="https://wa.me/917774044098?text=Hi%20Jayesh,%20I%20just%20checked%20out%20your%20awesome%20Digital%20Hub!%20%F0%9F%94%A5%20Let's%20connect." target="_blank" class="link-card whatsapp">
-            💬 WhatsApp Chat
+        <a href="https://wa.me/917774044098?text=Hi%20Jayesh,%20checked%20out%20your%20Digital%20Hub!" target="_blank" class="link-card whatsapp">
+            💬 Connect on WhatsApp
         </a>
 
         <a href="https://jayeshdhumal355.github.io/WebProject-/" target="_blank" class="link-card projects">
-            🚀 System Architecture Projects
+            🚀 Featured Web Projects
         </a>
     </div>
 
-    <div class="footer-tag">
-        Verified Profile // @crown_jd_10
+    <div class="footer">
+        © 2025 Jayesh Dhumal // Verified Developer
     </div>
 
 </body>
