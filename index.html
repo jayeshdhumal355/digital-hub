@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayesh | Digital Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #0f172a; 
+            background-image: radial-gradient(circle at 50% 10%, #1e293b 0%, #0f172a 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        .brand-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .main-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 30px; 
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 0 0 10px #fff, 0 0 20px #00f2fe, 0 0 30px #00f2fe;
+            animation: flicker 2s infinite alternate;
+        }
+
+        .sub-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 11px;
+            letter-spacing: 8px;
+            color: #4facfe;
+            margin-top: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 10px #fff, 0 0 20px #00f2fe, 0 0 30px #00f2fe; }
+            20%, 24%, 55% { text-shadow: none; }
+        }
+
+        .links-container {
+            width: 100%;
+            max-width: 380px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0 20px;
+        }
+
+        .link-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 14px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.3s ease-in-out;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* --- Individual Hover Effects --- */
+        .insta { border-left: 4px solid #bc1888; }
+        .insta:hover { 
+            background: rgba(188, 24, 136, 0.15); 
+            box-shadow: 0 0 20px rgba(188, 24, 136, 0.6); 
+            border-color: #e1306c;
+            transform: translateY(-3px); 
+        }
+
+        .youtube { border-left: 4px solid #ff0000; }
+        .youtube:hover { 
+            background: rgba(255, 0, 0, 0.15); 
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); 
+            border-color: #ff0000; 
+            transform: translateY(-3px); 
+        }
+
+        .whatsapp { border-left: 4px solid #25d366; }
+        .whatsapp:hover { 
+            background: rgba(37, 211, 102, 0.15); 
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.6); 
+            border-color: #25d366; 
+            transform: translateY(-3px); 
+        }
+
+        .projects { border-left: 4px solid #7000ff; }
+        .projects:hover { 
+            background: rgba(112, 0, 255, 0.15); 
+            box-shadow: 0 0 20px rgba(112, 0, 255, 0.6); 
+            border-color: #7000ff; 
+            transform: translateY(-3px); 
+        }
+
+        .footer-tag {
+            margin-top: 30px;
+            font-size: 8px;
+            letter-spacing: 2px;
+            color: #475569;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="brand-header">
+        <h1 class="main-title">JAYESH</h1>
+        <div class="sub-title">DIGITAL HUB</div>
+    </div>
+
+    <div class="links-container">
+        <a href="https://www.instagram.com/crown_jd_10" target="_blank" class="link-card insta">
+            📸 Follow on Instagram
+        </a>
+
+        <a href="https://www.youtube.com/@trolltrapped" target="_blank" class="link-card youtube">
+            🎬 YouTube: Troll Trapped
+        </a>
+
+        <a href="https://wa.me/917774044098?text=Hi%20Jayesh,%20I%20just%20checked%20out%20your%20awesome%20Digital%20Hub!%20%F0%9F%94%A5%20Let's%20connect." target="_blank" class="link-card whatsapp">
+            💬 WhatsApp Chat
+        </a>
+
+        <a href="https://jayeshdhumal355.github.io/WebProject-/" target="_blank" class="link-card projects">
+            🚀 System Architecture Projects
+        </a>
+    </div>
+
+    <div class="footer-tag">
+        Verified Profile // @crown_jd_10
+    </div>
+
+</body>
+</html>
